@@ -347,12 +347,26 @@ p {
   list-style: none;
 }
 
-.footer__social a {
+.footer__social-item,
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-.footer__social a:hover,
+.footer__social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer__social-link:hover,
 .footer__email:hover {
   opacity: 0.7;
 }
